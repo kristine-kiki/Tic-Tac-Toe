@@ -44,13 +44,17 @@
   }
 
   .cell:hover {
-
+    background-color: #4517a1;
   }
 
   .button {
-
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
   }
   
   .status {
-
+    font-size: 1.2rem;
+    margin-top: 20px;
   }

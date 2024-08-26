@@ -26,13 +26,14 @@
 
   h1 {
     font-family: "Pacifico";
-    font-size: 30px;
+    font-size: 2rem;
     letter-spacing: 3px;
+    margin: 0;
   }
 
   .box {
-    height: 20vmin;
-    width: 20vmin;
+    height: 15vmin;
+    width: 15vmin;
     background-color: rgb(241, 245, 247);
     display: flex;
     font-size: 2rem;
@@ -45,10 +46,12 @@
 
   .game {
     display: grid;
-    grid-template-rows: repeat(3, 20vmin);
-    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 17vmin);
+    grid-template-columns: repeat(3, 17vmin);
     margin: 20px auto;
     gap: 5px;
+    justify-content: center;
+    
   }
 
   .box:hover {
@@ -57,43 +60,46 @@
   }
 
   .button {
-    font-family: "Pacifico";
+    font-family: "Pacifico", cursive;
     font-size: 1.5rem;
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 12px;
     cursor: pointer;
   }
-  
+
+  .score-area {
+    font-size: 2rem;
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+    
+}
+
+  .scores {
+    display: inline-block;
+    padding: 5px;
+  }
+
   .status {
     font-size: 2rem;
     letter-spacing: 3px;
-    margin-top: 20px;
+    margin: 20px 0;
+    text-align: center;
   }
 
-  .score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
-}
-
-.controls-area {
-    width: 85%;
-    margin: 30px auto;
-}
-
-.scores {
-  display: inline-block;
-  padding: 25px;
-}
-#score {
-    color: green;
+#X {
+    color: hsl(189, 75%, 73%);
     font-weight: bold;
+    font-size: larger;
+    
 }
 
-#incorrect {
-    color: red;
+#O {
+    color: hsl(189, 75%, 73%);
     font-weight: bold;
+    font-size: larger;
+    
 }
 
   @media (max-width: 600px) {
@@ -111,6 +117,4 @@
       margin: 0.5em auto;
       display: block;
       padding: 5px;
-  }
-
   }

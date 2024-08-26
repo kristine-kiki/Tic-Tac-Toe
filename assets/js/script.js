@@ -76,10 +76,10 @@ function restart() {
     gameInUse = true;
     gameStatus = ['','','','','','','','',''];
     statusShow.innerText = `${player} turn!`;
-    boxMark.forEach(box => box.innerText = '');
+    boxes.forEach(box => box.innerText = '');
 }
 
-boxes.forEach(cell => cell.addEventListener('click', boxMark));
+boxes.forEach(box => box.addEventListener('click', boxMark));
 reset.addEventListener('click', restart);
 
 });

@@ -47,6 +47,11 @@ function result() {
     if (win) {
         statusShow.innerText = `${player} won!`;
         gameInUse = false;
+        if (player === 'X') {
+            incrementX();
+        } else {
+            incrementO();
+        }
         return;
     }
 
@@ -82,4 +87,14 @@ function restart() {
 boxes.forEach(box => box.addEventListener('click', boxMark));
 reset.addEventListener('click', restart);
 
+//score functions copied from Love Math project
+function incrementX() {
+
+    let oldScore = parseInt(document.getElementById('X').innerText);
+    document.getElementById('X').innerText = ++oldScore;
+}
+    function incrementO() {
+        let oldScore = parseInt(document.getElementById('O').innerText);
+        document.getElementById('O').innerText = ++oldScore;
+    }
 });

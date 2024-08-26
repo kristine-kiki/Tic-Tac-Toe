@@ -71,6 +71,31 @@
     margin-top: 20px;
   }
 
+  .score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.controls-area {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.scores {
+  display: inline-block;
+  padding: 25px;
+}
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
   @media (max-width: 600px) {
     h1 {
       font-size: 2rem;
@@ -78,4 +103,14 @@
     .status {
       font-size: 1.5rem;
     }
+    .score-area {
+      width: 100%;
+    }
+
+    .scores {
+      margin: 0.5em auto;
+      display: block;
+      padding: 5px;
+  }
+
   }

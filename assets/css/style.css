@@ -15,7 +15,8 @@
     height: 100vh;
     margin: 0;
     background-color: #fff7e7;
-  
+  }
+
   h1 {
     font-family: "Pacifico";
     font-size: 2rem;
@@ -23,7 +24,9 @@
     margin: 0;
   }
 
-  /*styles of the game*/
+  /*boardGame styling*/
+
+  /*circles-'box' style*/
   .box {
     height: 15vmin;
     width: 15vmin;
@@ -37,14 +40,14 @@
     cursor: pointer;
   }
 
+  /*games layout style*/
   .game {
     display: grid;
     grid-template-rows: repeat(3, 17vmin);
     grid-template-columns: repeat(3, 17vmin);
     margin: 20px auto;
     gap: 5px;
-    justify-content: center;
-    
+    justify-content: center; 
   }
 
   .box:hover {
@@ -52,6 +55,7 @@
     color: rgb(233, 240, 241);
   }
 
+  /*reset buttons style*/
   .resetButton {
     font-family: "Pacifico", cursive;
     font-size: 1.5rem;
@@ -66,8 +70,7 @@
     margin: 20px auto;
     text-align: center;
     width: 60%;
-    
-}
+  }
 
   .scores {
     display: inline-block;
@@ -81,26 +84,16 @@
     text-align: center;
   }
 
-}
+  #X, #O {
+    color: hsl(189, 75%, 73%);
+    font-weight: bold;
+    font-size: larger;
+  }
 
-.field {
+  .field {
   text-align: center;
   margin: auto;
-}
-
-#X {
-    color: hsl(189, 75%, 73%);
-    font-weight: bold;
-    font-size: larger;
-    
-}
-
-#O {
-    color: hsl(189, 75%, 73%);
-    font-weight: bold;
-    font-size: larger;
-    
-}
+  }
 
   @media (max-width: 600px) {
     h1 {

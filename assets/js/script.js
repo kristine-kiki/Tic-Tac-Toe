@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let player = 'X';
+    let playerMark = 'X';
     let gameInUse = true;
     let gameStatus = ['','','','','','','','',''];
     
@@ -20,34 +20,39 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 function boxUse(clickedBox, clickedIndex) {
-    gameStatus[clickedIndex] = player;
-    clickedBox.innerText = player;
+    gameStatus[clickedIndex] = playerMark;
+    clickedBox.innerText = playerMark;
 }
 
 function otherPlayer() {
-    player = player === 'X' ? 'O' : 'X';
-    statusShow.innerText = `${player} turn!`;
+    playerMark = playerMark === 'X' ? 'O' : 'X';
+    statusShow.innerText = `${playerMark} turn!`;
 }
 
+/**
+ * loop through terms to win the game
+ */
 function result() {
-    let win = false;
+    let winGame = false;
     for (let i = 0; i < termsToWin.length; i++) {
         const [r, u, n] = termsToWin [i];
-        let kk = gameStatus[r];
-        let mm = gameStatus[u];
+        let player1 = gameStatus[r];
+        let player2 = gameStatus[u];
         let z = gameStatus[n];
-        if (kk === ''|| mm === ''|| z === '') {
+        if (player1 === ''|| player2 === ''|| z === '') {
             continue;
         }
-        if (kk === mm && mm === z) {
-            win = true; break;
+        if (player1 === player2 && player2 === z) {
+            winGame = true; break;
         }
     }
 
-    if (win) {
-        statusShow.innerText = `${player} won!`;
+    if (winGame) {
+        statusShow.innerText = `${playerMark
+    
+        } won!`;
         gameInUse = false;
-        if (player === 'X') {
+        if (playerMark === 'X') {
             incrementX();
         } else {
             incrementO();
@@ -55,8 +60,8 @@ function result() {
         return;
     }
 
-    let equal = !gameStatus.includes('');
-    if (equal) {
+    let equalGame = !gameStatus.includes('');
+    if (equalGame) {
         statusShow.innerText = `You both won!`;
         gameInUse = false;
         return;
@@ -73,14 +78,13 @@ function result() {
 
         boxUse(clickedBox, clickedIndex);
         result();
-    
 }
 
 function restart() {
-    player = 'X';
+    playerMark = 'X';
     gameInUse = true;
     gameStatus = ['','','','','','','','',''];
-    statusShow.innerText = `${player} turn!`;
+    statusShow.innerText = `${playerMark} turn!`;
     boxes.forEach(box => box.innerText = '');
 }
 

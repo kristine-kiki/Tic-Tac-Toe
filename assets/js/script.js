@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameStatus = ['','','','','','','','',''];
     
     const boxes = document.querySelectorAll('.box');
-    const reset = document.getElementById('reset');
+    const resetButton = document.getElementById('resetButton');
     const statusShow = document.getElementById('status');
     
     const termsToWin = [
@@ -85,7 +85,7 @@ function restart() {
 }
 
 boxes.forEach(box => box.addEventListener('click', boxMark));
-reset.addEventListener('click', restart);
+resetButton.addEventListener('click', restart);
 
 //score functions copied from Love Math project
 function incrementX() {

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags for keywords-->
     <meta name="keyword"
         content="game, tic tac toe, kids games, boardgame, fun game, easy game">
     <meta name="author" content="Tic Tac Toe">   
@@ -12,15 +14,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/XO/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!--title of the page-->
     <title>Tic Tac Toe</title>
 </head>
 
 <body>
     <div class="field">
-        
+        <!--header of the game-->
         <h1>Tic Tac Toe</h1>
         <div id="boardGame" class="game">
+        <!--each circle/box of game-->
             <div class="box" index="0"></div>
             <div class="box" index="1"></div>
             <div class="box" index="2"></div>
@@ -32,17 +35,21 @@
             <div class="box" index="8"></div>
         </div>
         <div class="status" id="status">Start the game!</div>
+        <!--show scores for each player-->
         <div class="score-area">
             <p class="scores">X :<span id="X"> 0</span></p>
             <p class="scores">O :<span id="O"> 0</span></p>
         </div>
+        <!--button to restart the game-->
         <button id="resetButton" class="resetButton">Reset the game</button>
     
         <footer>
         <h2>Rules of the game</h2>
+        <!--rules of the game-->
         <p>Players take turns placing their marks X or O in empty squares.
             The first player to get 3 of their marks in a row (up, down, across, or diagonally) wins.
             If all 9 squares are full and no player has won, the game is a draw</p>
+        <!--copywrite information-->
         <p>&copy;2024 Kristine Kamola</p>
         </footer>
     </div>   

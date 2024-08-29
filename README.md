@@ -6,13 +6,19 @@ This is a well known Tic Tac Toe game, just in a new shape! Not every time we ha
 <ul><li><strong>Header</strong></li> <br>
 As you can see, on the top of the page is the name of the game in a playful font for kids more to like. It is clear to read and understand.<br><br>
 <img src="assets/pictures/header.png"><br><br>
-<li><strong>The Game</strong></li> <br>
+<li><strong>The Game</strong> <br><br>
 <ul><li>Layout of the game is changed to make it more interesting and playful from classic Tic Tac Toe games with a grid of squeres. Circle changes the colour and indicates which field player wants to mark </li><br>
 <img src="assets/pictures/markedCircle.png"> <br><br>
-<li>Status section under the game shows to start the game. After the game is started it shows which player does the next move<br><br>
-<img src="assets/pictures/startButton.png"> <inline><img src="assets/pictures/playersTurn.png"></inline>
-
+<li>Status section under the game shows to start the game. <br><br>
+<img src="assets/pictures/startButton.png"> <br><br>
+<li>After the game is started it shows which player does the move.Each of the players taking turns to mark empty fields with their mark.<br><br>
+<img src="assets/pictures/playersTurn.png"></ul> <br>
+<li><strong>Score area</strong></li><br>
+<ul><li>After game is finished winner is announced under the game area "X won!", "O won!" or "You Both won!"</li> <br>
+<img src="assets/pictures/winMsg.png"><br><br> <li>Scores are counted accordinly which player has won and is indicated under the winning message.</li><br>
+<img src="assets/pictures/scores.png">
 </ul>
+
 ## Body
 
 ## Testing

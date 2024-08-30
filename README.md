@@ -30,10 +30,24 @@ The footer includes the rules for how to play the game.<br></ul><br>
 ## Testing
 
 <ul><li><strong>W3C HTML Validator</strong></li>
-Provides inspiration and explains the purpose of the website
-<li><strong>Workshop</strong></li>
-Describes the benefits of joining IIWII.
-<li><strong>Contact</strong></li>
-Allows visitors to sign up for updates and information on candle-making.
-<li><strong>Sign Up!</strong></li>
-Sign up section to recieve newest updates and information about how to make candles<br>
+No Errors or Warnings to show
+<li><strong>W3C CSS Validator (Jigsaw)</strong></li>
+No Errors found.
+<li><strong>JSHint JavaScript Validator</strong></li>
+No Errors or Warnings found.
+<li><strong>Lighthouse</strong></li><br>
+<img src="assets/pictures/lighthouse.png"></ul>
+
+## Bugs
+While I was validating code with the W3C HTML Validator, I got 9 error messages <br><br>
+<img src="assets/pictures/error.png"> <br><br>
+Code fixed by changing attribute`s name to <strong>data-index</strong>.<br>
+
+## Deployment
+Web page was created by using Github.Created new repository as per instructions. I was using "git add . " for adding the files and "git commit -m" to commit changes i was making, "git push" was used to push changes to repository on Github. Github repository-Settings-Branch-chainged to "main"-Saved. System provided live link to [TIC TAC TOE](https://kristine-kiki.github.io/)
+
+## Credits
+<ul><li>Code for the Score-area copied from Love Maths project</li>
+<li>The rules of the game were copied from Google</li>
+<li>A big thank you to Code Institute's student <strong>Ioan Zaharia</strong> (https://github.com/zioan) for his excellent support and quick replies in the Slack community.
+</ul>

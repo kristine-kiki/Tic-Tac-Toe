@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 //marking circle/box
-function boxUse(clickedBox, clickedIndex) {
-    gameStatus[clickedIndex] = playerMark;
+function boxUse(clickedBox, clickedDataIndex) {
+    gameStatus[clickedDataIndex] = playerMark;
     clickedBox.innerText = playerMark;
 }
 
@@ -80,7 +80,7 @@ function result() {
 //box click event
     function boxMark(event) {
         const clickedBox = event.target;
-        const clickedIndex = parseInt(clickedBox.getAttribute('index'));
+        const clickedDataIndex = parseInt(clickedBox.getAttribute('data-index'));
         //do nothing if the clicked circle/box is ticked or game is finished
         if (gameStatus[clickedIndex] !== ''|| !gameInUse) {
             return;

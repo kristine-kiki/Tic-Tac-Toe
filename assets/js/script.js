@@ -82,11 +82,11 @@ function result() {
         const clickedBox = event.target;
         const clickedDataIndex = parseInt(clickedBox.getAttribute('data-index'));
         //do nothing if the clicked circle/box is ticked or game is finished
-        if (gameStatus[clickedIndex] !== ''|| !gameInUse) {
+        if (gameStatus[clickedDataIndex] !== ''|| !gameInUse) {
             return;
         }
         //tick circle/box and check result
-        boxUse(clickedBox, clickedIndex);
+        boxUse(clickedBox, clickedDataIndex);
         result();
 }
 

@@ -1,5 +1,5 @@
 # TIC-TAC-TOE
-This is a well-known Tic Tac Toe game, but with a new twist! We may not always have paper and pen handy, but we always have our mobile phones.<br> Long wait for a bus? Kids getting bored? Why not play a quick game of [TIC TAC TOE](https://kristine-kiki.github.io/Tic-Tac-Toe/) game? This game is designed primarily for kids, but it's also perfect for anyone who enjoys a fun, casual game <br> The game is optimized for a wide range of devices, ensuring smooth and efficient navigation..<br><br>
+This is a well-known Tic Tac Toe game, but with a new twist! We may not always have paper and pen handy, but we always have our mobile phones.<br> Long wait for a bus? Kids getting bored? Why not play a quick game of [TIC TAC TOE](https://kristine-kiki.github.io/Tic-Tac-Toe/) game? This game is designed primarily for kids, but it's also perfect for anyone who enjoys a fun, casual game. <br><br> The game is optimized for a wide range of devices, ensuring smooth and efficient navigation. <br>It has been built with HTML (provides structure), CSS (handles the styling) and JavaScript (adds the interactivity). <br><br>
 <img src="assets/pictures/response .png">
 
 ## Features
@@ -29,6 +29,8 @@ The footer includes the rules for how to play the game.<br></ul><br>
 
 ## Testing
 
+I can confirm the game is working in Google Chrome, Mozzila Firefox and Microsoft Edge. In all three browsers game works and is responsive as expected.<br><br> I can confirm the game works and is responsive on different size of devices.<br><br>It has been tested with validators such as:
+
 <ul><li><strong>W3C HTML Validator</strong></li>
 No Errors or Warnings to show
 <li><strong>W3C CSS Validator (Jigsaw)</strong></li>
@@ -44,7 +46,7 @@ While I was validating code with the W3C HTML Validator, I got 9 error messages 
 Code fixed by changing attribute`s name to <strong>data-index</strong>.<br>
 
 ## Deployment
-Web page was created by using Github.Created new repository as per instructions. I was using "git add . " for adding the files and "git commit -m" to commit changes i was making, "git push" was used to push changes to repository on Github. Github repository-Settings-Branch-chainged to "main"-Saved. System provided live link to [TIC TAC TOE](https://kristine-kiki.github.io/Tic-Tac-Toe/)
+Web page was created by using Github. Created new repository as per instructions. I was using "git add . " for adding the files and "git commit -m" to commit changes i was making, "git push" was used to push changes to repository on Github. Github repository-Settings-Branch-chainged to "main"-Saved. System provided live link to [TIC TAC TOE](https://kristine-kiki.github.io/Tic-Tac-Toe/)
 
 ## Credits
 <ul><li>Code for the Score-area copied from Love Maths project</li>
